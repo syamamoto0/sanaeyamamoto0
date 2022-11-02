@@ -90,14 +90,13 @@
           : url
       };
     };
-    
     //YOUR TURN: add your Mapbox token
-    mapboxgl.accessToken =
-    'pk.eyJ1Ijoic3kwOTI4IiwiYSI6ImNsOXEyb213OTB3NzAzb3A4NGozdW5ucjQifQ.YGLTPX9phjwJRolj_X1HwA'; //Mapbox token 
+  
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3kwOTI4IiwiYSI6ImNsOXEyb213OTB3NzAzb3A4NGozdW5ucjQifQ.YGLTPX9phjwJRolj_X1HwA'; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
-      center: [-77.0351775, 38.8867977], // starting position [lng, lat]
+      center: [-122.411, 37.785], // starting position [lng, lat]
       zoom: 10,// starting zoom
       transformRequest: transformRequest
     });
@@ -130,7 +129,7 @@
                 'data': data
               },
               'paint': {
-                'circle-radius': 5,
+                'circle-radius': 4,
                 'circle-color': "purple"
               }
             });
@@ -188,4 +187,3 @@
 </body>
 
 </html>
-
